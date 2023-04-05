@@ -19,3 +19,10 @@ console.log(nums)
 
 const arr1: any = [1, "test", true, {name: "Fernando"}]
 console.log(arr1)
+
+// 4 - parameters of functions
+
+function sum(a: number, b: number) {
+    console.log(a + b)
+}
+sum(1, 2)

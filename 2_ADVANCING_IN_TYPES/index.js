@@ -13,3 +13,8 @@ console.log(nums);
 // 3 - type: any
 const arr1 = [1, "test", true, { name: "Fernando" }];
 console.log(arr1);
+// 4 - parameters of functions
+function sum(a, b) {
+    console.log(a + b);
+}
+sum(1, 2);
