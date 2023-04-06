@@ -109,3 +109,6 @@ function showDirection(direction) {
 }
 showDirection("left");
 // showDirection("top") // can't, cze we set that we can only use the types we specified ('left', 'right', 'center', only these values)
+// 16 - non null assertion operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);
