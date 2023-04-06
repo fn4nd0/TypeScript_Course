@@ -131,3 +131,25 @@ const coordObj:Point = {
 }
 
 showCoords(coordObj)
+
+// 14 - interface x type alias
+interface Person {
+    name: string
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = {name: "Fernando", age: 32}
+
+console.log(somePerson)
+
+type personType = {
+    name: string
+}
+
+// can't change the type, its almos like we r trying to change a const value
+// type personType = {
+//     age: number
+// }

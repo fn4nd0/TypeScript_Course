@@ -91,3 +91,9 @@ const coordObj = {
     z: 30
 };
 showCoords(coordObj);
+const somePerson = { name: "Fernando", age: 32 };
+console.log(somePerson);
+// can't change the type, its almos like we r trying to change a const value
+// type personType = {
+//     age: number
+// }
