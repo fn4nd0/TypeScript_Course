@@ -40,3 +40,12 @@ function greeting(name: string): string {
 
 console.log(minus(8, 1))
 console.log(greeting('Fernando'))
+
+// 6 - anonymous function
+
+setTimeout(function() {
+    const sallary: number = 10000;
+
+    // In the next  case, the typescript will point an error since the parseFloat is expecting a string
+    // console.log(parseFloat(sallary))
+})
