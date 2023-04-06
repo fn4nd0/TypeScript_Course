@@ -60,3 +60,20 @@ function advancedGreeting(firstName, surname) {
 }
 console.log(advancedGreeting('Fernando', 'Mendes'));
 console.log(advancedGreeting('Leticia'));
+// 10 - union types
+function showBalance(balance) {
+    console.log(`The account balance is $${balance}`);
+}
+showBalance(100);
+showBalance('200');
+// showBalance(false) - can't compile
+const arr2 = [100, '200', true];
+// 11 - advancing in union types
+function showUserRole(role) {
+    if (typeof role === 'boolean') {
+        return "The user isn't approved!";
+    }
+    return `The user function is: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
