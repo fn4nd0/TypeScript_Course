@@ -26,3 +26,17 @@ function sum(a: number, b: number) {
     console.log(a + b)
 }
 sum(1, 2)
+
+
+// 5 - type of the function's return
+
+function minus(a: number, b: number): number {
+    return a - b
+}
+
+function greeting(name: string): string {
+    return `Hello ${name}`
+}
+
+console.log(minus(8, 1))
+console.log(greeting('Fernando'))
