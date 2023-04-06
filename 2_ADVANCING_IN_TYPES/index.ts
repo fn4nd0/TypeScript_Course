@@ -62,3 +62,22 @@ passCoordinates(objCoord)
 // passCoordinates(3, 3) // error
 
 const personObj: {name: string, surname: string} = {name: "Fernando", surname: "Mendes"}
+
+// 8 - optional args
+function showNumbers(a: number, b: number, c?: number) {
+    console.log("a: " + a)
+    console.log("b: " + b)
+    if (c) console.log("c: " + c)
+}
+showNumbers(1, 2, 3)
+showNumbers(1, 2)
+
+// 9 - validating optional args
+function advancedGreeting(firstName: string, surname?: string) {
+    if (surname !== undefined)
+        return `Hello ${firstName} ${surname}, how are you?`
+    else
+        return `Hello ${firstName}, how are you?`
+}
+console.log(advancedGreeting('Fernando', 'Mendes'))
+console.log(advancedGreeting('Leticia'))
