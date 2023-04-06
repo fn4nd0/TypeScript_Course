@@ -153,3 +153,20 @@ type personType = {
 // type personType = {
 //     age: number
 // }
+
+// 15 - literal type
+let test: "testing"
+
+// test = 1;
+test = "testing";
+// this doesn't looks useful
+console.log(test)
+
+// but we can see its usability with union types, like this:
+function showDirection(direction: "left" | "right" | "center") {
+    console.log(`The direction is ${direction}`)
+}
+showDirection("left")
+// showDirection("top") // can't, cze we set that we can only use the types we specified ('left', 'right', 'center', only these values)
+
+
