@@ -82,3 +82,12 @@ function showId(id) {
 }
 showId(1);
 showId("123");
+function showCoords(obj) {
+    console.log(`x: ${obj.x} y: ${obj.y} z: ${obj.z}`);
+}
+const coordObj = {
+    x: 10,
+    y: 25,
+    z: 30
+};
+showCoords(coordObj);
