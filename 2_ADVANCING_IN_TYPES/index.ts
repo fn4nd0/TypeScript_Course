@@ -49,3 +49,16 @@ setTimeout(function() {
     // In the next  case, the typescript will point an error since the parseFloat is expecting a string
     // console.log(parseFloat(sallary))
 })
+
+// 7 - types of objects
+function passCoordinates(coord: {x: number, y: number}) {
+    console.log(`X coordinate: ${coord.x}`)
+    console.log(`Y coordinate: ${coord.y}`)
+}
+
+const objCoord = {x: 1.342343, y: 2.934292}
+
+passCoordinates(objCoord)
+// passCoordinates(3, 3) // error
+
+const personObj: {name: string, surname: string} = {name: "Fernando", surname: "Mendes"}
